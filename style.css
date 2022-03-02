@@ -9,10 +9,21 @@ section, header {
 }
 body {
     position: relative;
+    z-index: 0;
     font-family: 'Courier New', Courier, monospace;
     background-image: url("https://phonoteka.org/uploads/posts/2021-04/1619440724_10-phonoteka_org-p-madagaskar-fon-14.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+}
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    backdrop-filter: blur(4px);
 }
 header {
     position: fixed;
