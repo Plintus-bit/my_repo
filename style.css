@@ -1,0 +1,30 @@
+@import url(null_style.css);
+
+:root {
+    --width: 1180px;
+}
+section, header {
+    width: var(--width);
+    margin: 0 auto;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__contacts {
+    display: grid;
+    grid-template-rows: repeat(3, 30px);
+    justify-items: center;
+    align-items: center;
+}
+.header__email {
+    font-style: italic;
+}
