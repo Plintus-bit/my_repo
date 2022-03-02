@@ -8,16 +8,21 @@ section, header {
     margin: 0 auto;
 }
 body {
+    position: relative;
     font-family: 'Courier New', Courier, monospace;
 }
 header {
     position: fixed;
-    top: 0px;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#section__first {
+    position: relative;
+    top: 110px;
 }
 .header__contacts {
     display: grid;
@@ -27,4 +32,24 @@ header {
 }
 .header__email {
     font-style: italic;
+}
+.image__moto {
+    inline-size: 100%;
+    block-size: 320px;
+    object-fit: cover;
+    object-position: top;
+}
+.galery {
+    width: 100%;
+    display: grid;
+    row-gap: 12px;
+}
+.galery__row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 12px;
+}
+.galery .galery__row:nth-child(2n) {
+    grid-template-columns: 40% 60%;
 }
